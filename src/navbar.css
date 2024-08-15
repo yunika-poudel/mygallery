@@ -1,0 +1,29 @@
+/* Basic navbar styling */
+.nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: transparent;
+  z-index: 1000;
+  transition: background-color 0.1s ease;
+  padding-top: 25px;
+  padding-inline: 10px;
+}
+.nav-bar h2 {
+  margin: 0;
+  font-size: 30px;
+  color: #5c4c3e;
+}
+
+/* Scrolled state with a different background color */
+.nav-bar.scrolled {
+  background-color: #2e2e2b;
+  color: #fff;
+  padding-bottom: 20px;
+}
+.scrolled-text.scrolled {
+  color: #ffdf;
+}
+.scrolled input::placeholder {
+  color: #fff;
+}

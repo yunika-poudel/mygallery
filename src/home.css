@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.bg {
+  /* position: relative; */
+  padding: 40px;
+  height: 90vh;
+  z-index: 999;
+}
+/* .bg img {
+  height: 75vh;
+  background-size: cover;
+  object-fit: fill;
+  position: absolute;
+  left: 30%;
+} */
+
+.contant {
+  padding: 15%;
+  position: absolute;
+  text-align: center;
+}
+.contant h1 {
+  font-size: 50px;
+  color: #fff;
+  align-items: center;
+  text-align: center;
+}
+.data h1 {
+  font-size: 16px;
+  margin: 20px;
+  border: 1px solid rgb(228, 225, 225);
+  background-color: #575003;
+  padding: 10px 0;
+}
+.data {
+  max-height: 230px;
+  scrollbar-width: none;
+  overflow-y: auto;
+  width: 300px;
+  margin: auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.527);
+  border-radius: 5px;
+  transform: translateX(-50%);
+}
+
+.btn {
+  background-image: linear-gradient(
+    to right,
+    #442505e5 0%,
+    #b29f94 51%,
+    #603813 100%
+  );
+  border: none;
+  margin: 10px;
+  padding: 12px 33px;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #383401;
+  font-weight: bold;
+  box-shadow: 0 0 20px #eeeeee1c;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+/* .gallary  {
+  
+  display: grid;
+  grid-auto-rows: 240px;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  font-size: 3rem;
+  color: #fff;
+  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+  border-radius: 4px;
+  transition: all 500ms;
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+.gallary {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
+  padding: 0 90px;
+  /* position: relative; */
+  padding: 20px;
+}
+.gallary-items {
+  background-color: #fff;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+  letter-spacing: 2px;
+}
+.gallary img {
+  width: 100%;
+}
+@media screen and (min-width: 600px) {
+  .gallary-tall {
+    grid-row: span 2 / auto;
+  }
+
+  .gallary-wide {
+    grid-column: span 2 / auto;
+  }
+}
+.wraps {
+  background: #c4be8081;
+  border: 1px solid rgba(196, 191, 191, 0.699);
+  position: absolute;
+  right: 0;
+  height: 44px;
+  border-radius: 15px;
+  padding-left: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.imagekohover {
+  opacity: 0.9;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.test {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}

@@ -3,7 +3,7 @@ import "./home.css";
 import Search from "./components/Search";
 import { FaHeart } from "react-icons/fa";
 import { SearchProps } from "./models/SearchProps";
-import { VideoFile, Videos } from "./models/Videos";
+import { Videos } from "./models/Videos";
 import { Photos } from "./models/Photos";
 
 const Home = ({

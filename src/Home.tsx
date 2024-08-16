@@ -132,7 +132,6 @@ const Home = ({
                           controls
                         >
                           <source src={videos.link} type="video/mp4" />
-                          Your browser does not support the video tag.
                         </video>
                       ))}
                     </div>

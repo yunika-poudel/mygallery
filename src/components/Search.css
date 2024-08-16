@@ -23,6 +23,7 @@
   border: 1px solid rgba(255, 255, 255, 0.808);
   padding-left: 10px;
   position: relative;
+  margin-top: 15px;
 }
 input {
   background: transparent;
@@ -50,4 +51,56 @@ select {
 }
 select option {
   background-color: gray;
+}
+@media (max-width:900px) {
+  .input-wrapper{
+  width: 70%;
+  }
+  
+}
+@media (max-width:650px) {
+  .input-wrapper{
+  width: 90%;
+  }
+  
+}
+@media (max-width:520px) {
+  .input-wrapper{
+  width: 90%;
+  }
+  
+}
+
+  
+
+@media (max-width:482px) {
+  .input-wrapper{
+  width: 110%;
+  
+  }
+  
+}
+@media (max-width:600px) {
+  .input-wrapper{
+  width: 70%;
+  height: 40px;
+  
+  }
+  select{
+    font-size: 12px;
+    padding-left: 1px;
+  }
+  
+}
+@media (max-width:450px) {
+  .input-wrapper{
+  width: 95%;
+  height: 40px;
+  
+  }
+  select{
+    font-size: 12px;
+    padding-left: 1px;
+  }
+  
 }

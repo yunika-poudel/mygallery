@@ -27,3 +27,8 @@
 .scrolled input::placeholder {
   color: #fff;
 }
+@media (max-width:600px) {
+  .nav-bar h2{
+    font-size: 20px;
+  }
+}

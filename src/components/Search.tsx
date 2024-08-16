@@ -13,7 +13,13 @@ const Search = ({
   return (
     <div className="search">
       <div className="input-wrapper">
-        <div className="wrap">
+        <form
+          onSubmit={(e) => {
+            e.preventDefault(); // Prevents the default form submission behavior
+            setSearch(!search); // Triggers the search state change
+          }}
+          className="wrap"
+        >
           <FaSearch id="icon" />
           <input
             type="text"
@@ -22,13 +28,13 @@ const Search = ({
             onChange={(e) => {
               setSearchText(e.target.value);
             }}
-            onKeyDown={(e) => {
-              if (e.key === "Enter" || e.key === "Go" || e.key === "Search") {
-                setSearch(!search);
-              }
-            }}
+            // onKeyDown={(e) => {
+            //   if (e.key === "Enter" || e.key === "Go" || e.key === "Search") {
+            //     setSearch(!search);
+            //   }
+            // }}
           />
-        </div>
+        </form>
         <div className="wraps">
           {selectedValue == "photos" ? (
             <IoMdPhotos id="icons" />

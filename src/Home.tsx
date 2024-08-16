@@ -123,17 +123,19 @@ const Home = ({
                 // Type guard for Videos
                 if ("video_files" in item) {
                   return (
-                    <div key={item.id}>
-                      {item.video_files.map((videos: VideoFile) => (
-                        <video
-                          key={videos.id}
-                          height={"200px"}
-                          width={"400"}
-                          controls
-                        >
-                          <source src={videos.link} type="video/mp4" />
-                        </video>
-                      ))}
+                    <div key={item.id} style={{ marginTop: "10px" }}>
+                      <video
+                        key={item.id}
+                        // height={"200px"}
+                        // width={"400px"}
+                        className="video_css"
+                        controls
+                      >
+                        <source
+                          src={item.video_files[0].link}
+                          type="video/mp4"
+                        />
+                      </video>
                     </div>
                   );
                 }

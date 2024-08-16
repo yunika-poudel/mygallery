@@ -111,6 +111,13 @@ h1 {
   width: 100%;
 }
 
+.video_css {
+  width: 100%;
+  height: auto;
+  max-width: 800px; /* Set a maximum width */
+  max-height: 450px; /* Set a maximum height */
+}
+
 @media (max-width: 400px) {
   .contant h1 {
     font-size: 18px;
@@ -143,9 +150,6 @@ h1 {
   .test {
     font-size: 18px;
   }
-}
-
-.image-wrapper {
 }
 
 .wraps {

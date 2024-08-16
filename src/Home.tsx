@@ -89,47 +89,6 @@ const Home = ({
       <div className="gallary-items">
         <h1>MyGallery</h1>
         <div className="gallary">
-          {/* {selectedValue === "photos"
-            ? filterGallery?.map((item) => (
-                <div className="image-wrapper">
-                  <img
-                    src={item?.src?.original}
-                    alt="gallery"
-                    key={item.id}
-                    onMouseEnter={() =>
-                      setShowIcon({ state: true, id: item.id })
-                    }
-                    onMouseLeave={() => setShowIcon({ state: false, id: 0 })}
-                    className={`${
-                      showIcon.id == item.id && showIcon.state
-                        ? "imagekohover"
-                        : ""
-                    } `}
-                  />
-                  <FaHeart
-                    className="test"
-                    onClick={() => toggleLike(item.id)}
-                    color={like.includes(item.id) ? "red" : "white"}
-                  />
-                </div>
-              ))
-            : filterGallery?.map((item) => {
-                return (
-                  <div key={item.id}>
-                    {item?.video_files?.map((videos: VideoFile) => (
-                      <video
-                        key={videos.id}
-                        height={"400px"}
-                        width={"400px"}
-                        controls
-                      >
-                        <source src={videos.link} type="video/mp4" />
-                        Your browser does not support the video tag.
-                      </video>
-                    ))}
-                  </div>
-                );
-              })} */}
           {selectedValue === "photos"
             ? filterGallery?.map((item) => {
                 // Type guard for Photos
@@ -168,8 +127,8 @@ const Home = ({
                       {item.video_files.map((videos: VideoFile) => (
                         <video
                           key={videos.id}
-                          height={"400px"}
-                          width={"400px"}
+                          height={"200px"}
+                          width={"400"}
                           controls
                         >
                           <source src={videos.link} type="video/mp4" />

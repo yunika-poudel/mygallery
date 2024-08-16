@@ -23,7 +23,7 @@ const Search = ({
               setSearchText(e.target.value);
             }}
             onKeyDown={(e) => {
-              if (e.key === "Enter") {
+              if (e.key === "Enter" || e.key === "Go" || e.key === "Search") {
                 setSearch(!search);
               }
             }}

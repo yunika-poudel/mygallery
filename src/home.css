@@ -185,4 +185,15 @@ h1 {
     padding: 2px;
     font-size: 12px;
   }
+  .gallary {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+    /* padding: 0 90px; */
+    /* position: relative; */
+    /* padding: 20px; */
+  }
 }
